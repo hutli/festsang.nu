@@ -1,0 +1,48 @@
+html,
+body {
+  font-family: Open Sans;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.ContentContainer {
+  position: relative;
+  display: block;
+  background-color: white;
+  /*background: url(/img/background.jpg);*/
+  z-index: 1;
+}
+
+.Content {
+  max-width: 750px;
+  margin: 0 auto 0 auto;
+  padding: 5px 0 0 0;
+}
+
+.ParallaxContainer {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+  background: url(/img/landing.jpg);
+  background-color: rgb(250, 228, 216);
+}
+
+.side-by-side {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800");
